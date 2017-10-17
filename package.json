@@ -1,0 +1,32 @@
+{
+  "name": "wer-bin-ich",
+  "version": "0.2.6",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "8.5.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "ejs": "2.5.6",
+    "express": "4.15.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bastifantasti/wer-bin-ich.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

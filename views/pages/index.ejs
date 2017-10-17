@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+<% include ../partials/nav.ejs %>
+
+<div class="jumbotron text-center">
+    <div class="container">
+        <h2><a href="https://en.wikipedia.org/wiki/Resting_bitch_face" target="_blank">RESTING BITCH FACE</a></h2>
+    </div>
+</div>
+<div class="container">
+    <div class="alert alert-info text-center" role="alert">
+        Für Kathi :)
+    </div>
+    <div id="output_error" class="hidden alert alert-danger text-center" role="alert">
+        Nope. Sry. Reicht einfach nicht. Du bimst 1 Lauch.
+    </div>
+
+    <div id="output_success" class="hidden alert alert-success text-center" role="alert">
+        LOL! Du bimst 1 Kathi vong Faceigkeit her.
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-3" id="txt_top1">
+
+        </div>
+        <div class="col-xs-3" id="txt_top2">
+
+        </div>
+        <div class="col-xs-3" id="txt_top3">
+
+        </div>
+        <div class="col-xs-3" id="txt_top4">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" id="val_top1">
+
+        </div>
+        <div class="col-xs-3" id="val_top2">
+
+        </div>
+        <div class="col-xs-3" id="val_top3">
+
+        </div>
+        <div class="col-xs-3" id="val_top4">
+
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <button class="btn button btn-large btn-primary" onclick="myclick()">make 1 Kathi Face vong Video</button>
+            <br>
+            <p>oder upload 1 Image:</p>
+            <input class="btn button btn-large btn-primary" id="inputFileToLoad" type="file"
+                   onchange="loadImageFileAsURL();"/>
+        </div>
+        <div class="col-md-6">
+            <video autoplay="true" id="videoElement" width="100%" style="overflow: hidden">
+
+            </video>
+
+        </div>
+
+    </div>
+</div>
+<script  src="/main.js"></script>
+</body>
+</html>
